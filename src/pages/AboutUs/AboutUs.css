@@ -1,0 +1,34 @@
+.aboutus{
+    margin-top: 10%;
+}
+
+.aboutus_container{
+    margin: 0 11% 0 16%;
+}
+.aboutus_title{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.aboutus_information > p{
+    font-size: 20px;
+}
+
+.home_button{
+    margin-top: 10%;
+    
+}
+
+.home_button > button {
+    border: none;
+    color : rgb(49, 49, 233);
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+}
+
+.home_button :hover{
+    background-color: rgb(173, 194, 224);
+    cursor: pointer;
+}

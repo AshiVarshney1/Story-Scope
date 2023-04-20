@@ -1,0 +1,98 @@
+
+
+.navbar_container {
+    position: sticky;
+    top: 0;
+    background-color: #B8621B;
+    z-index: 10;
+}
+
+.navbar_about_us {
+    background-color: red;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+}
+
+
+
+.navbar_left {
+    display: flex;
+    align-items: center;
+    flex: 0.4;
+}
+
+.navbar_left>img {
+    width: 80px;
+    margin-right: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.navbar_left>input {
+    height: 60px;
+    width: 500px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    padding: 0 10px;
+}
+
+.navbar_right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0.5;
+}
+
+.navbar_right>p {
+    cursor: pointer;
+    color: #454545;
+    font-size: 18px;
+}
+
+.navbar_right>button {
+    cursor: pointer;
+    background-color: #454545;
+    color: whitesmoke;
+    border: none;
+    padding: 5px 15px;
+    font-size: 17px;
+    border-radius: 4px;
+}
+
+.navbar_line {
+    border: 0.5px solid lightgrey;
+}
+
+@media screen and (max-width: 1120px) {
+    .navbar_right>p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navbar_right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar_left>input {
+        width: 70%;
+    }
+}

@@ -1,0 +1,15 @@
+.left_menu_container {
+    height: 600px;
+    position: sticky;
+    top: 75px;
+}
+
+@media screen and (max-width: 500px) {
+    .left_menu_container {
+        position: static;
+        display: flex;
+        justify-content: center;
+        height: 260px;
+        margin: 15px 0;
+    }
+}

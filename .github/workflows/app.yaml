@@ -1,0 +1,28 @@
+name: Deploy
+
+on:
+  pull_request:
+    types: [closed]
+
+jobs:
+  deploy_to_prod:
+    name: Deploy to prod
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [10]
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Install Firebase Tools
+        run: npm install firebase-tools -g
+      - name: Install Dependencies
+        run: npm i
+      - name: Run build
+        env:
+          BUILD: ${{ SECRETS.BUILD }}
+        run: npm run build
+      - name: Firebase Deploy
+        run: firebase deploy --only hosting:${{ secrets.FIREBASE_HOSTING }} -P ${{ secrets.FIREBASE_PROJECT_ID }}

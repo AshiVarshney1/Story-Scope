@@ -1,0 +1,33 @@
+.recents_container {
+    background-color: white;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 12px;
+}
+
+.recents_title {
+    font-size: 14px;
+}
+
+.recents_tags_container {
+    margin-left: 15px;
+    font-size: 14px;
+    color: gray;
+    font-weight: 600;
+}
+
+.recents_tags_container>p {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    .recents_container {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .recents_container {
+        margin-left: 15px;
+    }
+}
