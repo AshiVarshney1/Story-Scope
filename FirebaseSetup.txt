@@ -1,0 +1,15 @@
+Steps to install firebase -
+1. npm i firebase
+2. npm i -g firebase-tools
+
+
+To Deploy -
+1. firebase login
+2. firebase init (Selecting the project that you have created in firebase)
+    Options to select -
+    -> Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
+    -> What do you want to use as your public directory? build
+    -> Configure as a single-page app (rewrite all urls to /index.html)? Y
+    -> Set up automatic builds and deploys with GitHub? n
+3. npm run build
+4. firebase deploy
