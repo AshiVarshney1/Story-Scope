@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Story-Scope/static/css/main.eaf06d79.css",
+    "main.js": "/Story-Scope/static/js/main.f02219f4.js",
+    "static/js/787.239de7cb.chunk.js": "/Story-Scope/static/js/787.239de7cb.chunk.js",
+    "index.html": "/Story-Scope/index.html",
+    "main.eaf06d79.css.map": "/Story-Scope/static/css/main.eaf06d79.css.map",
+    "main.f02219f4.js.map": "/Story-Scope/static/js/main.f02219f4.js.map",
+    "787.239de7cb.chunk.js.map": "/Story-Scope/static/js/787.239de7cb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eaf06d79.css",
+    "static/js/main.f02219f4.js"
+  ]
+}
